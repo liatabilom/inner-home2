@@ -1,0 +1,16 @@
+#background-video {
+  height: 100%;
+  width: 100%;
+  float: left;
+  top: 0;
+  padding: none;
+  position: fixed;
+}
+
+body .vp-center {
+  background-color: transparent;
+}
+
+.player {
+  background-color: transparent;
+}
