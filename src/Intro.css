@@ -1,0 +1,22 @@
+.introCard {
+	width: 220px;
+	height: 200px;
+}
+
+#textCard {
+	width: 200px;
+	height: 137px;
+	position: relative;
+	right: -800px;
+	bottom: 400px;
+	font-family: Avenir;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 9px;
+	line-height: 12px;
+	color: #80848f;
+}
+
+li {
+	list-style: none;
+}
