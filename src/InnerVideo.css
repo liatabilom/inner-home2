@@ -1,8 +1,9 @@
 #background-video {
 	position: relative;
 	top: 100px;
-	left: -10px;
-	height: 100%;
-	width: 100%;
+	left: -50px;
+	height: 150%;
+	width: 150%;
 	padding: none;
+	overflow: auto;
 }

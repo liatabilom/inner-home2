@@ -12,7 +12,7 @@ openVideo = () => {
 
 
 
-<script src="https://fast.wistia.com/embed/medias/zejsug121b.jsonp" async></script>
+<script src="https://fast.wistia.com/embed/medias/zejsug121b" async></script>
     <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
     <div
         className="wistia_responsive_padding"

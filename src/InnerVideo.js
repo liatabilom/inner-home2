@@ -1,18 +1,11 @@
 import React, { Component } from 'react';
 import Switch from './Switch';
+import AppVideo from './AppVideo';
 import Intro from './Intro';
 import Buttons from './Buttons';
 import './InnerVideo.css';
 
 class InnerVideo extends Component {
-	constructor(props) {
-		super(props);
-
-		this.state = {
-			videoUrl: '',
-			password: 'portfolio',
-		};
-	}
 	render() {
 		return (
 			<div>
@@ -23,25 +16,9 @@ class InnerVideo extends Component {
 						Correia Gonc,alves
 					</header>
 				</h1>
-				<h2 id="background-video">
+				<h2>
 					<Switch />
-					<iframe
-						title="Background Video"
-						src="https://fast.wistia.com/embed/medias/zejsug121b"
-						allowtransparency="true"
-						frameborder="0"
-						scrolling="no"
-						className="wistia_embed"
-						name="wistia_embed"
-						allowfullscreen
-						mozallowfullscreen
-						webkitallowfullscreen
-						oallowfullscreen
-						msallowfullscreen
-						width="620"
-						height="349"
-					></iframe>
-					<script src="//fast.wistia.net/assets/external/E-v1.js" async></script>
+					<AppVideo />
 					<Buttons />
 				</h2>
 				<h3>
