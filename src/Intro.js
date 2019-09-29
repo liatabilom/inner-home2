@@ -4,9 +4,9 @@ import './Intro.css';
 class Intro extends Component {
 	render() {
 		return (
-			<div className="card-body introCard">
-				<div className="clearfix">
-					<ul className="float-left" id="textCard">
+			<div style={{ height: 450 }}>
+				<div className="introCard">
+					<ul id="textCard">
 						<li>Pessoas que..</li>
 						<br />
 						<li>...leem muito sobre música,</li>

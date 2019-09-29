@@ -1,29 +1,34 @@
 import React, { Component } from 'react';
-import Switch from './Switch';
 import AppVideo from './AppVideo';
 import Intro from './Intro';
-import Buttons from './Buttons';
+import Selector from './Selector';
 import './InnerVideo.css';
 
 class InnerVideo extends Component {
 	render() {
 		return (
 			<div>
-				<h1>
-					<header className="header">
+				<div className="header">
+					<header>
 						Na'dia
 						<br />
 						Correia Gonc,alves
 					</header>
-				</h1>
-				<h2>
-					<Switch />
-					<AppVideo />
-					<Buttons />
-				</h2>
-				<h3>
-					<Intro />
-				</h3>
+				</div>
+				<br />
+				<div className="container videoContainer">
+					<div className="row">
+						<div className="card-body p-0 col-md-8">
+							<h1>
+								<AppVideo />
+							</h1>
+							<Selector />
+						</div>
+						<div className="card-body p-0 col-md-4">
+							<Intro />
+						</div>
+					</div>
+				</div>
 			</div>
 		);
 	}

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './AppVideo.css';
 
 class AppVideo extends Component {
 	constructor(props) {
@@ -11,24 +12,26 @@ class AppVideo extends Component {
 	}
 	render() {
 		return (
-			<div className="clearfix .d-inline" id="mobile-video">
-				<iframe
-					title="Mobile Video"
-					src={this.state.videoUrl2}
-					allowtransparency="true"
-					frameborder="0"
-					scrolling="no"
-					className="wistia_embed"
-					name="wistia_embed"
-					width="170"
-					height="339"
-					allowfullscreen
-					mozallowfullscreen
-					webkitallowfullscreen
-					oallowfullscreen
-					msallowfullscreen
-				></iframe>
-				<script src="//fast.wistia.net/assets/external/E-v1.js" async></script>
+			<div style={{ height: 450 }}>
+				<div id="mobile-video">
+					<iframe
+						title="Mobile Video"
+						src={this.state.videoUrl2}
+						allowtransparency="true"
+						frameBorder="0"
+						scrolling="no"
+						className="wistia_embed"
+						name="wistia_embed"
+						width="170"
+						height="339"
+						allowFullScreen
+						mozallowfullscreen="true"
+						webkitallowfullscreen="true"
+						oallowfullscreen="true"
+						msallowfullscreen="true"
+					></iframe>
+					<script src="//fast.wistia.net/assets/external/E-v1.js" async></script>
+				</div>
 			</div>
 		);
 	}
