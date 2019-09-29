@@ -37,10 +37,12 @@ class Buttons extends Component {
 	render() {
 		return (
 			<div>
-				<button className="btn btn-secondary border-0" onClick={this.SplashVideo}>
+				<button className="btn btn-secondary rounded-0" onClick={this.SplashVideo}>
 					Splash
 				</button>
-				<button onClick={this.FlowChart}>Flow</button>
+				<button className="btn btn-secondary rounded-0" onClick={this.FlowChart}>
+					Flow
+				</button>
 			</div>
 		);
 	}
