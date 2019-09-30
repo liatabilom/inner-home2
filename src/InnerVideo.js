@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import AppVideo from './AppVideo';
+import MainVideo from './MainVideo';
 import Intro from './Intro';
 import Selector from './Selector';
 import './InnerVideo.css';
@@ -20,8 +21,10 @@ class InnerVideo extends Component {
 					<div className="row">
 						<div className="card-body p-0 col-md-8">
 							<h1>
+								<MainVideo />
 								<AppVideo />
 							</h1>
+							<br />
 							<Selector />
 						</div>
 						<div className="card-body p-0 col-md-4">

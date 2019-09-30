@@ -33,3 +33,19 @@
 	padding: 10px;
 	text-align: center;
 }
+
+.btnSelector {
+	position: absolute;
+	bottom: -50px;
+	left: 400px;
+	border-radius: 4px;
+	font-family: Avenir;
+	font-style: normal;
+	font-weight: 900;
+	font-size: 13px;
+	line-height: 18px;
+	display: flex;
+	align-items: flex-end;
+	text-align: center;
+	letter-spacing: -0.006em;
+}
