@@ -10,9 +10,14 @@
 	left: 380px;
 }
 
-@media (max-width: 400px) {
-	#background-video {
+@media screen and (max-width: 480px) {
+	#background-video,
+	#mobile-video {
 		width: 50%;
 		height: 50%;
 	}
+}
+
+.app-video {
+	border-radius: 25px;
 }

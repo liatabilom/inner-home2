@@ -11,9 +11,11 @@ class InnerVideo extends Component {
 			<div>
 				<div className="header">
 					<header>
-						Na'dia
-						<br />
-						Correia Gonc,alves
+						<a href="https://www.correiagoncalves.com" style={{ textDecoration: 'none', color: 'white' }}>
+							Na'dia
+							<br />
+							Correia Gonc,alves
+						</a>
 					</header>
 				</div>
 				<br />

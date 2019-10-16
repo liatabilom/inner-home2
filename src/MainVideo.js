@@ -2,30 +2,31 @@ import React, { Component } from 'react';
 import Switch from './Switch';
 
 class MainVideo extends Component {
+	Video = document.getElementById('background-video');
+
 	constructor(props) {
 		super(props);
 
 		this.state = {
 			isChecked: true,
-			videoUrl: 'https://fast.wistia.com/embed/medias/zejsug121b',
+			Playing: true,
 		};
 	}
 
 	toggleVideo = () => {
 		this.setState({
 			isCHecked: !this.state.isChecked,
-			flyerUrl: 'https://i.imgur.com/TWe8DYz.png',
+			Playing: false,
 		});
 	};
 
-	render() {
-		return (
-			<div>
-				<Switch />
+	displayVideo = () => {
+		if (this.state.isChecked) {
+			return (
 				<div id="background-video">
 					<iframe
 						title="Background Video"
-						src={this.state.videoUrl}
+						src="https://fast.wistia.com/embed/medias/zejsug121b"
 						allowtransparency="true"
 						frameBorder="0"
 						scrolling="no"
@@ -41,6 +42,15 @@ class MainVideo extends Component {
 					></iframe>
 					<script src="//fast.wistia.net/assets/external/E-v1.js" async></script>
 				</div>
+			);
+		}
+	};
+
+	render() {
+		return (
+			<div>
+				<Switch status={this.state.isChecked} />
+				{this.displayVideo()}
 			</div>
 		);
 	}

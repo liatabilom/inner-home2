@@ -7,7 +7,7 @@ class AppVideo extends Component {
 
 		this.state = {
 			isVideoOn: true,
-			videoUrl2: 'https://fast.wistia.com/embed/medias/q8j6tskhcq',
+			videoUrl2: 'https://fast.wistia.com/embed/medias/q8j6tskhcq?transparent=0',
 		};
 	}
 	render() {
@@ -20,9 +20,9 @@ class AppVideo extends Component {
 						allowtransparency="true"
 						frameBorder="0"
 						scrolling="no"
-						className="wistia_embed"
+						className="app-video"
 						name="wistia_embed"
-						width="170"
+						width="166"
 						height="339"
 						allowFullScreen
 						mozallowfullscreen="true"
