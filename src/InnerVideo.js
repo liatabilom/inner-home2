@@ -11,7 +11,7 @@ class InnerVideo extends Component {
 			<div>
 				<div className="header">
 					<header>
-						<a href="https://www.correiagoncalves.com" style={{ textDecoration: 'none', color: 'white' }}>
+						<a href="https://www.correiagoncalves.com" style={{ textDecoration: 'none', color: '#80848F' }}>
 							Na'dia
 							<br />
 							Correia Gonc,alves
@@ -27,7 +27,6 @@ class InnerVideo extends Component {
 								<AppVideo />
 							</h1>
 							<br />
-							<Selector />
 						</div>
 						<div className="card-body p-0 col-md-4">
 							<Intro />

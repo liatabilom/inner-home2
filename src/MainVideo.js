@@ -47,12 +47,7 @@ class MainVideo extends Component {
 	};
 
 	render() {
-		return (
-			<div>
-				<Switch status={this.state.isChecked} />
-				{this.displayVideo()}
-			</div>
-		);
+		return <div>{this.displayVideo()}</div>;
 	}
 }
 
