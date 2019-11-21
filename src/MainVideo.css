@@ -1,7 +1,8 @@
 #background-video {
 	position: absolute;
-	top: 0px;
-	left: -600px;
+	top: -30px;
+	left: -620px;
+	padding: 20px;
 }
 
 .switchBtn {
