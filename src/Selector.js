@@ -13,7 +13,7 @@ class Selector extends Component {
 	};
 
 	render() {
-		return <button onClick={this.handleClick}>Click Me</button>;
+		return <button onClick={this.handleClick()}>Click Me</button>;
 	}
 }
 

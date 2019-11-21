@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import AppVideo from './AppVideo';
 import MainVideo from './MainVideo';
 import Intro from './Intro';
-import Selector from './Selector';
 import './InnerVideo.css';
 
 class InnerVideo extends Component {

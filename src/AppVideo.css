@@ -1,23 +1,16 @@
-#background-video {
-	position: absolute;
-	top: 0px;
-	left: -100px;
-}
-
 #mobile-video {
 	position: absolute;
 	top: 90px;
 	left: 380px;
 }
 
+.app-video {
+	border-radius: 25px;
+}
+
 @media screen and (max-width: 480px) {
-	#background-video,
 	#mobile-video {
 		width: 50%;
 		height: 50%;
 	}
-}
-
-.app-video {
-	border-radius: 25px;
 }
