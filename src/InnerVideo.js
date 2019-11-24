@@ -25,7 +25,6 @@ class InnerVideo extends Component {
 								<MainVideo />
 								<AppVideo />
 							</h1>
-							<br />
 						</div>
 						<div className="card-body p-0 col-md-4">
 							<Intro />

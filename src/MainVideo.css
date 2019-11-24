@@ -5,8 +5,18 @@
 	padding: 20px;
 }
 
+#background-image {
+	position: absolute;
+	top: -20px;
+	left: -600px;
+	height: 1100%;
+	width: 1650%;
+	z-index: 1;
+}
+
 .switchBtn {
 	position: absolute;
 	top: 20px;
 	left: 500px;
+	width: 30px;
 }

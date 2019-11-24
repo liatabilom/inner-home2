@@ -1,15 +1,41 @@
-.btnSelector {
-	position: absolute;
-	bottom: -50px;
-	left: 400px;
-	border-radius: 4px;
-	font-family: Avenir;
-	font-style: normal;
-	font-weight: 900;
-	font-size: 13px;
-	line-height: 18px;
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap'rel='stylesheet');
+
+.button {
+	height: 35px;
+	width: 90px;
+}
+.bottom-pages {
 	display: flex;
-	align-items: flex-end;
-	text-align: center;
-	letter-spacing: -0.006em;
+	position: relative;
+	top: 10px;
+	left: 155px;
+	width: 450px;
+}
+
+a.btn-outline-dark {
+	background-color: #000000;
+	border-color: #000000;
+	color: white;
+}
+
+.page-button {
+	color: #000000;
+	font-family: 'Nunito Sans', sans-serif;
+}
+
+.page-button.active {
+	color: #ffffff;
+}
+
+.page-button:hover {
+	text-decoration: none;
+	color: #ffffff;
+	background-color: #000000;
+}
+
+@media screen and (max-width: 480px) {
+	.bottom-pages {
+		width: 380px;
+		left: 5%;
+	}
 }

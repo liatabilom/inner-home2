@@ -5,18 +5,27 @@ class MainVideo extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			isPlaying: false,
+			videoDisplay: false,
+			video1: this.showVideo(),
 		};
 	}
 
-	toggleVideo = () => {
-		this.setState(prevState => ({
-			isPlaying: !prevState.isPlaying,
-			video: this.displayVideo(),
-		}));
-	};
-
 	displayVideo() {
+		this.setState(prevState => ({
+			videoDisplay: !prevState.videoDisplay,
+			video2: this.showImage(),
+		}));
+	}
+
+	showImage() {
+		return (
+			<div>
+				<img id="background-image" src="https://i.imgur.com/TWe8DYz.png" />
+			</div>
+		);
+	}
+
+	showVideo() {
 		return (
 			<div id="background-video">
 				<iframe
@@ -44,8 +53,8 @@ class MainVideo extends Component {
 		return (
 			<div class="custom-control custom-switch switchBtn">
 				<input type="checkbox" class="custom-control-input" id="customSwitch1" />
-				<label class="custom-control-label" for="customSwitch1" onClick={() => this.toggleVideo()} />
-				{this.state.isPlaying ? this.state.video : null}
+				<label class="custom-control-label" for="customSwitch1" onClick={() => this.displayVideo()} />
+				{!this.state.videoDisplay ? this.state.video1 : this.state.video2}
 			</div>
 		);
 	}
