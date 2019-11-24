@@ -1,10 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap'rel='stylesheet');
 
-.videoContainer {
-	padding: 0px;
-	margin: 10px;
-}
-
 .header {
 	text-align: left;
 	font-family: 'Nunito Sans', sans-serif;
@@ -24,28 +19,7 @@
 }
 
 .side {
-	flex: 70%;
+	flex: 50%;
 	padding: 0px;
-	margin: 0px;
-}
-
-.footer {
-	padding: 10px;
-	text-align: center;
-}
-
-.btnSelector {
-	position: absolute;
-	bottom: -50px;
-	left: 400px;
-	border-radius: 4px;
-	font-family: Avenir;
-	font-style: normal;
-	font-weight: 900;
-	font-size: 13px;
-	line-height: 18px;
-	display: flex;
-	align-items: flex-end;
-	text-align: center;
-	letter-spacing: -0.006em;
+	margin-left: 15px;
 }
